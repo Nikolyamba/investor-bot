@@ -82,7 +82,7 @@ async def buy_subscribe(message: types.Message):
 async def info_about_bot(message: types.Message):
     await message.answer("Краткое описание пользования ботом - https://telegra.ph/Kak-polzovatsya-botom-Insider-Crypto-07-28",
                          reply_markup=get_text_btns(btns={
-                             "Реквизиты организации": "ИП Сима"
+                             "Реквизиты организации": "ИП"
                          }))
 
 @dp.callback_query(F.data.startswith("ИП"))
