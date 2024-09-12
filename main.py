@@ -80,7 +80,7 @@ async def buy_subscribe(message: types.Message):
 
 @dp.message(F.text == "ℹ️ О боте")
 async def info_about_bot(message: types.Message):
-    await message.answer("Краткое описание пользования ботом - https://telegra.ph/Kak-polzovatsya-botom-Insider-Crypto-07-28",
+    await message.answer("Краткое описание пользования ботом",
                          reply_markup=get_text_btns(btns={
                              "Реквизиты организации": "ИП"
                          }))
